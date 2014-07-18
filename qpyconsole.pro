@@ -9,7 +9,8 @@ CONFIG  += warn_on debug
 UI_DIR = .ui
 MOC_DIR = .moc
 OBJECTS_DIR = .obj
-LIBS += -Wl,-E -lpython$(PYTHON_VERSION)
+LIBS += -lpython$(PYTHON_VERSION)
+QT += widgets
 
 DEFINES += USE_POPUP_COMPLETER
 
